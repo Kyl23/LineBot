@@ -1,0 +1,37 @@
+{
+    "admin": {
+        "Ue2688708cb13e1188681634a5509878f": "0000"
+    },
+    "staff": {},
+    "functions": [
+        {
+            "type": "message",
+            "label": "預約",
+            "text": "預約"
+        },
+        {
+            "type": "message",
+            "label": "預約草稿",
+            "text": "預約草稿"
+        },
+        {
+            "type": "message",
+            "label": "預約查詢",
+            "text": "預約查詢"
+        }
+    ],
+    "worker_functions": [
+        {
+            "type": "message",
+            "label": "管理",
+            "text": "管理"
+        }
+    ],
+    "menu": {
+        "catergory": [
+            {
+                "item": "price"
+            }
+        ]
+    }
+}

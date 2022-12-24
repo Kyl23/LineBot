@@ -1,0 +1,5 @@
+ngrok.exe
+.VSCodeCounter
+node_modules
+nodemon.json
+botconfig.json
