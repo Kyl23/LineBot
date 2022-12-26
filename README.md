@@ -12,6 +12,8 @@
 ## Why use this bot
 - it maybe clearly control the structure of staff
 - after deploy it can only control through the bot with the host(admin) id
+- admin can only be add or remove by host (staff no this limited)
+- Able defend attack from malicious
 
 # Tech Stack
 - Node.js
@@ -68,6 +70,7 @@
 ```
 
 # Deploy
+***  Please setup before deploy  ***
 - npm install
 - node app.js
 
