@@ -101,9 +101,8 @@ const AddStaff = (event, state_config, msgMapBreak = false) => {
 
             config.staff[msg] = state[msg].payload["join"];
             fs.writeFileSync("./config.json", JSON.stringify(config));
+            event.reply("操作成功！")
 
-            event.message.text = State.MANAGE_ADD_STAFF;
-            AddStaff(event, state_config, true);
             return;
         }
     }

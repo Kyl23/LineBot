@@ -109,9 +109,8 @@ const AddAdmin = (event, state_config, msgMapBreak = false) => {
 
             config.admin[msg] = state[msg].payload["join"];
             fs.writeFileSync("./config.json", JSON.stringify(config));
-
-            event.message.text = State.MANAGE_ADD_ADMIN;
-            AddAdmin(event, state_config, true);
+            event.reply("操作成功！")
+            
             return;
         }
     }

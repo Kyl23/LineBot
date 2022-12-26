@@ -78,7 +78,7 @@ const RemovePerson = (event, state_config, msgMapBreak = false) => {
 
         default: {
             const split_msg = msg.split("-");
-
+            console.log(split_msg)
             if (split_msg.length < 2 || !config[split_msg[1]] || !config[split_msg[1]][split_msg[0]] || (split_msg[1] === "admin" && admin[id] != "0000")) {
                 event.reply("不合法輸入！")
                 return;
@@ -86,9 +86,8 @@ const RemovePerson = (event, state_config, msgMapBreak = false) => {
 
             delete config[split_msg[1]][split_msg[0]]
             fs.writeFileSync("./config.json", JSON.stringify(config));
-
-            event.message.text = State.MANAGE_REMOVE_PERSON;
-            RemovePerson(event, state_config, true);
+            event.reply("操作成功！")
+            
             return;
         }
     }
